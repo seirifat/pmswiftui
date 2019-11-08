@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		EF7437F023750C430023CC8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7437EE23750C430023CC8F /* LaunchScreen.storyboard */; };
 		EF7437FB23750C430023CC8F /* PMSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7437FA23750C430023CC8F /* PMSwiftUITests.swift */; };
 		EF74380623750C430023CC8F /* PMSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74380523750C430023CC8F /* PMSwiftUIUITests.swift */; };
+		EFD6AE8E2375157D00EF52D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EFD6AE8D2375157D00EF52D3 /* Kingfisher */; };
+		EFD6AE902375157D00EF52D3 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EFD6AE8F2375157D00EF52D3 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD6AE902375157D00EF52D3 /* KingfisherSwiftUI in Frameworks */,
+				EFD6AE8E2375157D00EF52D3 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +156,10 @@
 			dependencies = (
 			);
 			name = PMSwiftUI;
+			packageProductDependencies = (
+				EFD6AE8D2375157D00EF52D3 /* Kingfisher */,
+				EFD6AE8F2375157D00EF52D3 /* KingfisherSwiftUI */,
+			);
 			productName = PMSwiftUI;
 			productReference = EF7437E023750C3F0023CC8F /* PMSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +232,9 @@
 				Base,
 			);
 			mainGroup = EF7437D723750C3F0023CC8F;
+			packageReferences = (
+				EFD6AE8C2375157D00EF52D3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = EF7437E123750C3F0023CC8F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +450,7 @@
 				DEVELOPMENT_TEAM = HCGGN7Z8PZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PMSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,6 +471,7 @@
 				DEVELOPMENT_TEAM = HCGGN7Z8PZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = PMSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,6 +607,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EFD6AE8C2375157D00EF52D3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EFD6AE8D2375157D00EF52D3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFD6AE8C2375157D00EF52D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EFD6AE8F2375157D00EF52D3 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFD6AE8C2375157D00EF52D3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF7437D823750C3F0023CC8F /* Project object */;
 }
