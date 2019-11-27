@@ -17,6 +17,8 @@
 		EF74380623750C430023CC8F /* PMSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74380523750C430023CC8F /* PMSwiftUIUITests.swift */; };
 		EFD6AE8E2375157D00EF52D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EFD6AE8D2375157D00EF52D3 /* Kingfisher */; };
 		EFD6AE902375157D00EF52D3 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = EFD6AE8F2375157D00EF52D3 /* KingfisherSwiftUI */; };
+		EFF09B96238E538000361AEF /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF09B95238E538000361AEF /* CircleImage.swift */; };
+		EFF09B98238E548600361AEF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF09B97238E548600361AEF /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		EF74380123750C430023CC8F /* PMSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PMSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF74380523750C430023CC8F /* PMSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMSwiftUIUITests.swift; sourceTree = "<group>"; };
 		EF74380723750C430023CC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFF09B95238E538000361AEF /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		EFF09B97238E548600361AEF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,7 @@
 			children = (
 				EF7437E323750C3F0023CC8F /* AppDelegate.swift */,
 				EF7437E523750C3F0023CC8F /* SceneDelegate.swift */,
-				EF7437E723750C3F0023CC8F /* ContentView.swift */,
+				EFF09B94238E535D00361AEF /* Views */,
 				EF7437E923750C430023CC8F /* Assets.xcassets */,
 				EF7437EE23750C430023CC8F /* LaunchScreen.storyboard */,
 				EF7437F123750C430023CC8F /* Info.plist */,
@@ -138,6 +142,16 @@
 				EF74380723750C430023CC8F /* Info.plist */,
 			);
 			path = PMSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		EFF09B94238E535D00361AEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF7437E723750C3F0023CC8F /* ContentView.swift */,
+				EFF09B95238E538000361AEF /* CircleImage.swift */,
+				EFF09B97238E548600361AEF /* MapView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF7437E423750C3F0023CC8F /* AppDelegate.swift in Sources */,
+				EFF09B96238E538000361AEF /* CircleImage.swift in Sources */,
+				EFF09B98238E548600361AEF /* MapView.swift in Sources */,
 				EF7437E623750C3F0023CC8F /* SceneDelegate.swift in Sources */,
 				EF7437E823750C3F0023CC8F /* ContentView.swift in Sources */,
 			);

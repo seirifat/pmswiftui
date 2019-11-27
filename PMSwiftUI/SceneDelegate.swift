@@ -29,6 +29,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        // my notes:
+        // UIHostingController creates a view controller for the SwiftUI view ContentView.
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
